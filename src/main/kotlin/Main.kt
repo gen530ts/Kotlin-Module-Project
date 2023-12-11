@@ -38,35 +38,3 @@ fun main() {
     entryArch.start()
 }
 
-
-//if(Scanner(System.`in`).)
-/*when(Scanner(System.`in`).nextLine().toInt()){
-    RetVal.CREATE.ordinal -> println(0)
-   RetVal.ENTRY.ordinal -> println(1)
-    RetVal.QUIT.ordinal -> println(2)
-    else -> println("not")
-}*/
-
-/*while (!(Scanner(System.`in`).hasNextInt())) {
-    println("That's not a number!");
-    Scanner(System.`in`).nextLine()
-}*/
-
-
-/*println(res)
- println(res.toByteArray().size)
- println(res.toByteArray().toList())*/
-/*when(res.toByteArray()){
-    "3","9"
-}*/
-// print("Scan = $res")
-//println()
-//String.to
-// break
-// createArch.start()
-//val st=Store()
-// st.setSelNote("ty")
-/*
-enum class RetVal {
-    CREATE, ENTRY, QUIT
-}*/

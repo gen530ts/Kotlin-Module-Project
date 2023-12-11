@@ -46,23 +46,10 @@ class Store {
     fun isThisNote(note:String):Boolean{
         return main[selArh]?.containsKey(note) ?:false
     }
-    /*fun isWhereNotes():Boolean{
-        return main[selArh]?.isEmpty() ?: false
-    }*/
-    /*fun isWhereArh():Boolean{
-        return main.isEmpty()
-    }*/
-    /**description*/
     fun setSelArh(arh:String){
         selArh=arh
     }
     fun setSelNote(note:String){
         selNote=note
     }
-    /*fun getSelArh():String{
-        return selArh
-    }*/
-    /*fun getSelNote():String{
-        return selNote
-    }*/
 }
