@@ -5,8 +5,18 @@ class SelFromList(
     private val strEnterName: String,
 ) {
     fun start() {
-            println("$strEnterName или нажмите 'Ввод' для выхода")
+        println("Введите $strEnterName или нажмите 'Ввод' для выхода")
+        while (true) {
             val res = Scanner(System.`in`).nextLine()
-            if(res.isNotEmpty()) onRun(res)
+            when {
+                res.trim().isNotEmpty() -> {
+                    onRun(res.lowercase())
+                    break
+                }
+                res.isNotEmpty() && res.trim().isEmpty() -> println("Введите " +
+                        "корректное значение:")
+                else -> break
+            }
+        }
     }
 }
